@@ -1,0 +1,75 @@
+{
+  "name": "advokate-luck-pc-vuetify",
+  "version": "1.0.0",
+  "description": "抽奖小程序管理系统前端",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "test:e2e": "vue-cli-service test:e2e --mode development",
+    "test:unit": "vue-cli-service test:unit",
+    "commit": "git-cz && yarn changelog",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "core-js": "^2.6.5",
+    "date-fns": "^1.30.1",
+    "dateformat": "^3.0.3",
+    "jsrsasign": "^8.0.12",
+    "lodash": "^4.17.15",
+    "roboto-fontface": "*",
+    "string-format-js": "^1.0.0",
+    "vant": "^2.0.5",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.0.0",
+    "vue-router": "^3.0.3",
+    "vuetify": "^2.0.0",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.15.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-unit-jest": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "axios": "^0.18.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-import": "^1.8.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass": "^1.17.4",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-axios": "^0.0.4",
+    "vue-cli-plugin-i18n": "^0.6.0",
+    "vue-cli-plugin-vant": "^1.0.1",
+    "vue-cli-plugin-vuetify": "^0.6.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.2.2",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.27",
+    "cz-conventional-changelog": "3.0.2",
+    "cz-customizable": "^6.2.0",
+    "husky": "^3.0.9"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
